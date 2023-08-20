@@ -21,6 +21,8 @@ plugins {
     id("buildsrc.plugins.base")
     kotlin("multiplatform")
     kotlin("plugin.serialization")
+    id("org.jetbrains.kotlinx.benchmark")
+    id("org.jetbrains.dokka")
 }
 
 
