@@ -3,7 +3,7 @@ package fleks.utils
 import org.gradle.api.artifacts.dsl.RepositoryHandler
 import org.gradle.kotlin.dsl.ivy
 
-fun RepositoryHandler.kotlinNative() {
+fun RepositoryHandler.kotlinNativeDistributions() {
   // workaround for https://youtrack.jetbrains.com/issue/KT-51379
   exclusiveContent {
     forRepository {
@@ -35,7 +35,7 @@ fun RepositoryHandler.kotlinNative() {
   }
 }
 
-fun RepositoryHandler.yankpkg() {
+fun RepositoryHandler.yarnDistributions() {
     exclusiveContent {
         forRepository {
             ivy("https://github.com/yarnpkg/yarn/releases/download") {
@@ -50,7 +50,7 @@ fun RepositoryHandler.yankpkg() {
 }
 
 
-fun RepositoryHandler.nodeJsDist() {
+fun RepositoryHandler.nodeJsDistributions() {
     exclusiveContent {
         forRepository {
             ivy("https://nodejs.org/dist/") {

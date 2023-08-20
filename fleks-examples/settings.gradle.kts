@@ -1,6 +1,6 @@
-import fleks.utils.kotlinNative
-import fleks.utils.nodeJsDist
-import fleks.utils.yankpkg
+import fleks.utils.kotlinNativeDistributions
+import fleks.utils.nodeJsDistributions
+import fleks.utils.yarnDistributions
 
 rootProject.name = "fleks-examples"
 
@@ -23,9 +23,9 @@ dependencyResolutionManagement {
 
     repositories {
         mavenCentral()
-        nodeJsDist()
-        yankpkg()
-        kotlinNative()
+        nodeJsDistributions()
+        yarnDistributions()
+        kotlinNativeDistributions()
     }
 
     versionCatalogs {
